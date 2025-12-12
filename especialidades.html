@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialidades | Pupuseria Dorita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- HEADER y NAVEGACIÓN COMPARTIDA -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Pupuseria Dorita</a>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="especialidad.html" class="active">Menú</a>
+                <a href="bebidas.html">Bebidas</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL: ESPECIALIDADES -->
+    <main>
+        <section class="section container">
+            <h1 class="text-center mb-4">Nuestras Pupusas Especiales</h1>
+            <p class="text-center text-lg max-w-4xl mx-auto mb-10">
+                Todas nuestras pupusas son hechas a mano y cocinadas en comal de barro. Servidas con curtido fresco y salsa de tomate casera.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Pupusa Card Component -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-yellow hover:shadow-xl transition duration-300">
+                    <h2 class="text-2xl font-bold mb-2">Pupusa Revuelta <span class="float-right text-primary-purple font-extrabold">$1.00</span></h2>
+                    <p class="text-sm font-semibold text-dark-text/80 mb-3">La favorita de El Salvador.</p>
+                    <p>
+                        <span class="font-bold text-primary-purple">Ingredientes:</span> Quesillo derretido, chicharrón de cerdo molido y frijoles refritos.
+                    </p>
+                </div>
+
+                <!-- Pupusa Card Component -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-yellow hover:shadow-xl transition duration-300">
+                    <h2 class="text-2xl font-bold mb-2">Pupusa de Queso y Loroco <span class="float-right text-primary-purple font-extrabold">$1.25</span></h2>
+                    <p class="text-sm font-semibold text-dark-text/80 mb-3">Aroma floral y sabor único.</p>
+                    <p>
+                        <span class="font-bold text-primary-purple">Ingredientes:</span> Quesillo fresco y tierno, mezclado con flores de loroco, cultivadas localmente.
+                    </p>
+                </div>
+                
+                <!-- Pupusa Card Component -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-yellow hover:shadow-xl transition duration-300">
+                    <h2 class="text-2xl font-bold mb-2">Pupusa de Ayote <span class="float-right text-primary-purple font-extrabold">$1.15</span></h2>
+                    <p class="text-sm font-semibold text-dark-text/80 mb-3">Opción dulce y vegetariana.</p>
+                    <p>
+                        <span class="font-bold text-primary-purple">Ingredientes:</span> Quesillo y trozos de ayote (calabaza) cocido y ligeramente endulzado.
+                    </p>
+                </div>
+
+                <!-- Pupusa Card Component -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-yellow hover:shadow-xl transition duration-300">
+                    <h2 class="text-2xl font-bold mb-2">Pupusa de Frijol con Queso <span class="float-right text-primary-purple font-extrabold">$1.00</span></h2>
+                    <p class="text-sm font-semibold text-dark-text/80 mb-3">Un clásico infaltable.</p>
+                    <p>
+                        <span class="font-bold text-primary-purple">Ingredientes:</span> Abundante frijol refrito y una capa generosa de quesillo.
+                    </p>
+                </div>
+                
+                <!-- Separador / Mensaje -->
+                <div class="md:col-span-2 text-center mt-6 p-4 bg-primary-purple/10 rounded-xl">
+                    <p class="text-lg text-primary-purple font-bold">¡Pide también la tuya de solo Queso o Frijol! ($0.85)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER COMPARTIDO -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Pupuseria Dorita. Tradición y Sabor Salvadoreño.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

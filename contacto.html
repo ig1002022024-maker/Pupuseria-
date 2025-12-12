@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Ubicación | Pupuseria Dorita</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos específicos para el bloque de contacto */
+        .contact-block {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+        .contact-item {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid var(--light-bg);
+            border-radius: 8px;
+        }
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--accent-yellow);
+            margin-right: 0.5rem;
+        }
+        .contact-item p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark-text);
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: var(--light-bg);
+            border: 2px solid var(--primary-purple);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2rem;
+            font-style: italic;
+        }
+         .social-block {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #E5E7EB;
+        }
+        .social-block .social-links a {
+            color: var(--primary-purple);
+            font-size: 2rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        .social-block .social-links a:hover {
+            color: var(--accent-yellow);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER y NAVEGACIÓN COMPARTIDA -->
+    <header>
+        <div class="container navbar">
+            <a href="index.html" class="logo">Pupuseria Dorita</a>
+            <nav class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="especialidad.html">Menú</a>
+                <a href="bebidas.html">Bebidas</a>
+                <a href="contacto.html" class="active">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL: CONTACTO -->
+    <main>
+        <section class="section container">
+            <h1 class="text-center mb-10">Estamos Listos para Servirte</h1>
+
+            <div class="contact-block">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Número de Teléfono -->
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <h2 class="text-xl">Llámanos y Haz tu Pedido</h2>
+                        <p>+5037715 7716</p>
+                    </div>
+
+                    <!-- Dirección -->
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h2 class="text-xl">Encuéntranos Aquí</h2>
+                        <p>Avenida Central, frente al Parque Nacional, Sonsonate, El Salvador.</p>
+                    </div>
+                </div>
+
+                <!-- Mapa Placeholder -->
+                <div class="map-placeholder">
+                    [Vista previa del mapa de Google Maps aquí]
+                </div>
+            </div>
+            
+            <div class="social-block text-center mt-8">
+                <h2 class="text-xl mb-4 text-dark-text">Síguenos en Redes</h2>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER COMPARTIDO -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Pupuseria Dorita. Tradición y Sabor Salvadoreño.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

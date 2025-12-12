@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Proyecto | Pupuseria Dorita</title>
+    <!-- Carga de Tailwind para utilidades -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración para usar colores personalizados de Tailwind (Se agregó type="text/tailwindcss" para resolver el ReferenceError) -->
+    <script type="text/tailwindcss">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-violet': '#8B5CF6', 
+                        'accent-teal': '#2DD4BF',    
+                        'secondary-yellow': '#FDE047', 
+                        'dark-text': '#1F2937',      
+                        'light-bg': '#F3F4F6',       
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link href=".style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="bg-white font-sans min-h-screen flex flex-col">
+
+    <!-- HEADER y NAVEGACIÓN -->
+    <header class="header-bg sticky top-0 z-50">
+       <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex-shrink-0 text-white text-2xl font-black tracking-widest uppercase">
+         </a>
+            
+       </nav>
+    </header>
+
+    <!-- SECCIÓN PRINCIPAL: SOBRE -->
+    <main class="flex-grow">
+        <section class="p-6 md:p-12 max-w-5xl mx-auto section-bg-gradient mt-8 mb-12 purple">
+            <h1 class="text-4xl md:text-5xl font-black text-accent-teal mb-8 border-b-4 border-secondary-yellow pb-4 text-center">
+                Pupuseria Dorita
+            </h1>
+            
+          <div class="space-y-8">
+                <p class="text-lg leading-relaxed text-center max-w-3xl mx-auto">
+                Te ofrecemos unas deliciosas pupusas en comal de barro quedaras encantado con su sabor y la atención que damos a nuestros clientes.           &nbsp;&nbsp; </p>
+
+                <!-- Historia de la Pupusería -->
+                <div class="grid md:grid-cols-2 gap-8 items-center bg-light-bg p-6 rounded-xl shadow-inner border border-gray-200">
+                  <div class="order-2 md:order-1">
+                        <h2 class="text-3xl font-bold text-primary-violet mb-4">Historia de la Pupusería Dorita</h2>
+                    <p class="mb-4 leading-relaxed">
+                            Pupuseria Dorita nació hace más de 15 años. Doña Dorita, la fundadora, se ha negado a modernizar su método de cocción, insistiendo en el **auténtico comal de barro**. Es este detalle lo que le da a cada pupusa su sabor inconfundiblemente ahumado y tradicional.
+                    </p>
+                    <p class="leading-relaxed font-semibold text-accent-teal">&nbsp;
+                     </p>
+                  </div>
+                    <div class="rounded-xl overflow-hidden shadow-xl border-4 border-primary-violet order-1 md:order-2">
+                    <a href="images/WhatsApp Image 2025-12-11 at 12.38.47 PM (1).jpeg"><img src="images/WhatsApp Image 2025-12-11 at 12.37.28 PM.jpeg" alt="Doña Dorita junto al comal de barro" class="w-full h-auto object-cover"></a> </div>
+            </div>
+                
+                <!-- Foco del Contenido -->
+            <h2 class="text-3xl font-bold text-primary-violet pt-6 border-t mt-8 text-center">El Menú Digital</h2>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="flex items-center space-x-4">
+                <a href="index.html" class="text-white text-lg font-medium hover:bg-violet-700/50 px-3 py-2 rounded-xl transition duration-300">&nbsp;</a>
+                <a href="especialidades/.html" class="text-secondary-yellow text-lg font-bold hover:bg-violet-700/50 px-3 py-2 rounded-xl transition duration-300">Especialidades&nbsp;</a>
+           <a href="style."><strong>&nbsp;</strong>&nbsp;</a> <strong><a href=".style">&nbsp;</a><a>&nbsp;</a></strong> </div>
+                   <a href="bebidas.html" class="text-lg font-medium hover:bg-violet-700/50 px-3 py-2 rounded-xl transition"> <strong> Bebidas</strong></a>
+              
+                  <a href="ubicación.html" class="text-lg font-medium hover:bg-violet-700/50 px-3 py-2 rounded-xl transition duration-300"><strong>Contacto&nbsp;</strong></a>
+                 
+              </ul>
+          </div>
+        </section>
+    </main>
+</body>
+</html>
