@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupusas Al Comal | Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Íconos para redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABECERA y MENÚ de Navegación (Compartido) -->
+    <header>
+        <div class="navbar container">
+            <a href="index.html" class="logo">Pupusas Al Comal</a>
+            <nav>
+                <ul class="nav-links" id="navMenu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="Especialidad.html">Especialidad</a></li>
+                    <li><a href="Bebidas.html">Bebidas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <div class="container">
+            <section class="hero">
+                <!-- Banner principal y mensaje central -->
+                <h1>¡Apoyando el sabor de "Pupusas Al Comal"!</h1>
+                
+                <!-- Breve descripción de la campaña -->
+                <p>
+                    Únete a esta iniciativa nacional que celebra la tradición y el emprendimiento. Nuestro objetivo es preservar y promover las pupusas hechas al comal, garantizando la calidad artesanal y el apoyo directo a las manos que lo hacen posible. <br>
+                    <strong>Cada pupusa que disfrutas, impulsa un sueño.</strong>
+                </p>
+
+                <!-- Botón de acción (adaptado a la estructura final) -->
+                <a href="Especialidad.html" class="btn">Conoce Nuestra Especialidad</a>
+
+                <!-- Imagen principal de la marca/campaña -->
+                <img src="https://placehold.co/1200x450/5A189A/FFFFFF?text=+-+Apoyo+Nacional" 
+                     alt="" 
+                     class="feature-image" 
+                     onerror="this.onerror=null; this.src='https://placehold.co/1200x450/9D4EDD/FFFFFF?text=Pupusas+Al+Comal+Tradicionales'">
+            </section>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA (Compartido) -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-text">
+                &copy; 2025 Campaña Nacional "Pupusas Al Comal". Todos los derechos reservados.
+            </div>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script para funcionalidad básica de menú móvil -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

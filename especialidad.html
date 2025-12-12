@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupusas Al Comal | Especialidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABECERA y MENÚ de Navegación (Compartido) -->
+    <header>
+        <div class="navbar container">
+            <a href="index.html" class="logo">Pupusas Al Comal</a>
+            <nav>
+                <ul class="nav-links" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Especialidad.html" class="active">Especialidad</a></li>
+                    <li><a href="Bebidas.html">Bebidas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL - Menú de Pupusas -->
+    <main>
+        <div class="container">
+            <h2 class="section-title">Nuestra Especialidad: Pupusas Al Comal</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Hechas con masa de maíz o arroz (a petición) y cocinadas lentamente sobre el auténtico comal de barro.</p>
+
+            <div class="menu-grid">
+                
+                <!-- Pupusa 1: Queso con Loroco -->
+                <div class="menu-item">
+                    <h3>Queso con Loroco</h3>
+                    <p>La combinación clásica, un favorito nacional con el aroma único del loroco.</p>
+                    <ul class="ingredients-list">
+                        <li><strong>Ingredientes:</strong> Masa de maíz, Quesillo artesanal premium, Flor de loroco fresca (de temporada).</li>
+                    </ul>
+                    <span class="price">$1.25 USD</span>
+                </div>
+
+                <!-- Pupusa 2: Revuelta Tradicional -->
+                <div class="menu-item">
+                    <h3>Revuelta Tradicional</h3>
+                    <p>La pupusa que lo tiene todo. El sabor balanceado de la carne, lácteos y granos.</p>
+                    <ul class="ingredients-list">
+                        <li><strong>Ingredientes:</strong> Masa de maíz, Chicharrón de cerdo molido, Frijoles refritos de la casa, Quesillo.</li>
+                    </ul>
+                    <span class="price">$1.50 USD</span>
+                </div>
+
+                <!-- Pupusa 3: Camarón y Queso -->
+                <div class="menu-item">
+                    <h3>Camarón y Queso</h3>
+                    <p>Pupusa de mar, con camarones salteados en mantequilla de ajo y mezclados con queso.</p>
+                    <ul class="ingredients-list">
+                        <li><strong>Ingredientes:</strong> Masa de maíz o arroz, Camarones pequeños, Queso mozzarella, Cebolla y pimiento.</li>
+                    </ul>
+                    <span class="price">$2.00 USD</span>
+                </div>
+
+                <!-- Pupusa 4: Solo Frijol -->
+                <div class="menu-item">
+                    <h3>Frijol Refrito</h3>
+                    <p>Una opción vegana/vegetariana simple y deliciosa, con el sabor concentrado de nuestro frijol.</p>
+                    <ul class="ingredients-list">
+                        <li><strong>Ingredientes:</strong> Masa de maíz, Frijoles rojos refritos, Especias. (Opción con queso disponible).</li>
+                    </ul>
+                    <span class="price">$0.90 USD</span>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="Bebidas.html" class="btn">Explora Nuestras Bebidas</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA (Compartido) -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-text">
+                &copy; 2025 Campaña Nacional "Pupusas Al Comal". Todos los derechos reservados.
+            </div>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script para funcionalidad básica de menú móvil -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupusas Al Comal | Bebidas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- CABECERA y MENÚ de Navegación (Compartido) -->
+    <header>
+        <div class="navbar container">
+            <a href="index.html" class="logo">Pupusas Al Comal</a>
+            <nav>
+                <ul class="nav-links" id="navMenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Especialidad.html">Especialidad</a></li>
+                    <li><a href="Bebidas.html" class="active">Bebidas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL - Menú de Bebidas -->
+    <main>
+        <div class="container">
+            <h2 class="section-title">Bebidas: Frescos, Gaseosas y Calientes</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">El acompañamiento perfecto para el sabor del comal. Refrescantes y energizantes.</p>
+
+            <h3 style="margin-top: 3rem; color: var(--color-primary); text-align: center;">Frescos Naturales (16oz)</h3>
+            <div class="menu-grid">
+                <!-- Fresco 1 -->
+                <div class="menu-item">
+                    <h3>Horchata Clásica</h3>
+                    <p>Bebida tradicional a base de arroz y semillas con un toque de canela.</p>
+                    <span class="price">$1.75 USD</span>
+                </div>
+
+                <!-- Fresco 2 -->
+                <div class="menu-item">
+                    <h3>Jugo de Tamarindo</h3>
+                    <p>Naturalmente ácido y dulce, ideal para limpiar el paladar.</p>
+                    <span class="price">$1.50 USD</span>
+                </div>
+                
+                <!-- Fresco 3 -->
+                <div class="menu-item">
+                    <h3>Ensalada de Frutas</h3>
+                    <p>Bebida dulce con trozos de fruta picada (papaya, melón, etc.).</p>
+                    <span class="price">$2.00 USD</span>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem; color: var(--color-primary); text-align: center;">Gaseosas y Bebidas Calientes</h3>
+            <div class="menu-grid">
+                <!-- Gaseosas -->
+                <div class="menu-item">
+                    <h3>Gaseosas Nacionales e Importadas</h3>
+                    <p>Coca-Cola, Kolashanpan, Sprite, y soda de naranja. Servidas en lata o botella.</p>
+                    <span class="price">$1.25 - $1.75 USD</span>
+                </div>
+
+                <!-- Café -->
+                <div class="menu-item">
+                    <h3>Café de la Finca</h3>
+                    <p>Taza de café molido de altura, disponible en americano o con leche.</p>
+                    <span class="price">$1.00 USD</span>
+                </div>
+                
+                <!-- Calientes -->
+                <div class="menu-item">
+                    <h3>Chocolate y Té</h3>
+                    <p>Chocolate caliente cremoso o selección de tés aromáticos.</p>
+                    <span class="price">$1.50 USD</span>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="contacto.html" class="btn">Visítanos y Contáctanos</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- PIE DE PÁGINA (Compartido) -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-text">
+                &copy; 2025 Campaña Nacional "Pupusas Al Comal". Todos los derechos reservados.
+            </div>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script para funcionalidad básica de menú móvil -->
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('show-menu');
+        }
+    </script>
+</body>
+</html>
